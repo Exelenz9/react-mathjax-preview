@@ -4,7 +4,7 @@ import loadScript from 'load-script'
 
 const SCRIPT = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_HTMLorMML'
 
-export default class extends Component {
+class MathJax extends Component {
   static propTypes = {
     className: PropTypes.string,
     style: PropTypes.string,
@@ -73,3 +73,5 @@ export default class extends Component {
     )
   }
 }
+
+export default MathJax;
